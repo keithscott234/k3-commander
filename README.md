@@ -1,4 +1,4 @@
-﻿# K3 Commander
+# K3 Commander
 
 Local file, search, and terminal tools connected through a private OpenAI tunnel.
 
@@ -6,9 +6,11 @@ Local file, search, and terminal tools connected through a private OpenAI tunnel
 
 Windows x64 and Linux x64 with Node.js 24. Extraction requires tar; Linux also requires unzip. Other platforms, automatic upgrades, and automatic startup for new portable installations are not yet verified.
 
-After the package and engine releases are published:
+Launch directly from GitHub (Node.js 24 and Git required; no npm account needed):
 
-    npx @t3forgeworks/k3-commander@latest remote
+    npx -y github:keithscott234/k3-commander remote
+
+In Windows PowerShell, use npx.cmd in place of npx. The npm registry package is not published yet.
 
 The command discovers an existing managed connection or installs a matching verified engine in your user account. A new device needs its own OpenAI tunnel and runtime key. Follow the terminal prompts using:
 
