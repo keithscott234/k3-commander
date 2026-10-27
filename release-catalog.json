@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "releases": [
+    {
+      "platform": "win32",
+      "arch": "x64",
+      "nodeMajor": 24,
+      "url": "https://github.com/keithscott234/k3-commander/releases/download/v0.1.0/k3-commander-0.1.0-rc3-win32-x64-node24.tar.gz",
+      "sha256": "3301bc770931ab1658bcd3a021f6017467e0951c41cdea99184bcd9d5d5c798d",
+      "manifestSha256": "213500a49dd1c6fbe25c413f907634dff30ef2ff82d4d35e65d5d4e89980a47d"
+    },
+    {
+      "platform": "linux",
+      "arch": "x64",
+      "nodeMajor": 24,
+      "url": "https://github.com/keithscott234/k3-commander/releases/download/v0.1.0/k3-commander-0.1.0-rc3-linux-x64-node24.tar.gz",
+      "sha256": "9ed9b19977a42bc96529a9201cc5cc88374362b17965bd624b7262c340d7dba2",
+      "manifestSha256": "c0c4051abcb79cc0c5f594ae52029df94b2d1ee1c1e94cdbf53c73f3379b28cd"
+    }
+  ]
+}

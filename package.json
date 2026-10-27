@@ -1,0 +1,39 @@
+{
+  "name": "@t3forgeworks/k3-commander",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "K3 Commander local MCP engine, with no metered tool-call quota",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node commander.mjs",
+    "test": "node --test test/*.test.mjs",
+    "control": "node control.mjs",
+    "test:desktop": "python3 test/desktop_test.py",
+    "test:remote": "node --test test/remote-cli.test.mjs"
+  },
+  "devDependencies": {
+    "ssh2": "1.17.0"
+  },
+  "bin": {
+    "k3-commander": "cli.mjs"
+  },
+  "files": [
+    "cli.mjs",
+    "lib/",
+    "scripts/install-portable.mjs",
+    "scripts/bundle-portable.mjs",
+    "scripts/doctor.mjs",
+    "scripts/runtime-filter.mjs",
+    "commander.mjs",
+    "engine-entry.mjs",
+    "ui/",
+    "upstream.json",
+    "release-catalog.json",
+    "UPSTREAM-LICENSE.txt",
+    "README.md"
+  ]
+}

@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>K3 Commander</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body><main><header><span class="brand">K3</span><div><p class="eyebrow">T3FORGEWORKS</p><h1>Commander</h1></div><span id="connection">Connecting…</span></header>
+<section class="hero"><p class="eyebrow">YOUR DEVICE. YOUR CONTROL.</p><h2 id="device">Local device</h2><p id="detail">Connect a trusted AI client to work with this computer.</p><div class="metrics"><div><span>Session</span><strong id="mode">—</strong></div><div><span>In progress</span><strong id="inflight">—</strong></div><div><span>Monthly tool quota</span><strong>None</strong></div></div></section>
+<section class="controls"><button id="pause" disabled>Pause new actions</button><button id="resume" disabled>Resume</button><button id="stop" class="danger" disabled>Stop engine &amp; commands</button><p>Pause blocks new requests. Running commands continue. Stop ends this engine and ordinary child commands; restart your client to reconnect.</p></section>
+<p id="message" role="status" aria-live="polite"></p>
+<section class="activity"><div class="section-heading"><h2>Recent activity</h2><span>Last 100 requests · this session</span></div><p id="empty">No activity yet.</p><ol id="history"></ol></section>
+<footer>Local connection only · AI provider limits still apply · Commands run with your account’s permissions.</footer>
+<dialog id="confirm"><h2>Stop this session?</h2><p>Running commands may end before saving their work. Other K3 Commander sessions are unaffected.</p><div><button id="cancel">Keep running</button><button id="confirm-stop" class="danger">Stop this session</button></div></dialog>
+</main></body></html>
