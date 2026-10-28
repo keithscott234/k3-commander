@@ -1,6 +1,6 @@
 {
   "name": "@t3forgeworks/k3-commander",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "type": "module",
   "description": "K3 Commander local MCP engine, with no metered tool-call quota",
@@ -34,6 +34,7 @@
     "upstream.json",
     "release-catalog.json",
     "UPSTREAM-LICENSE.txt",
-    "README.md"
+    "README.md",
+    "BACKGROUND.md"
   ]
 }

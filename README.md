@@ -51,3 +51,9 @@ Private bootstrap files are cached under %LOCALAPPDATA%/K3CommanderBootstrap. Ex
 Advanced: download connect.ps1 and run with -Check to inspect connection prerequisites without starting the connection, or -HelpOnly to inspect the CLI. These options can still download bootstrap prerequisites. -PortableNode forces the private runtime.
 
 Verified on Windows: fresh private runtime download and hash checks, cached runtime reuse, launcher execution, and existing managed connection prerequisite detection. New-device account enrollment is not automatic.
+
+## Launcher 0.1.2
+
+Interactive remote launches now show a K3 COMMANDER banner, timestamps, device name, version, connection mode, and next steps. Piped output stays plain.
+
+Optional portable background startup is available through `background enable|status|stop|reconnect|disable`. See [BACKGROUND.md](BACKGROUND.md) for credential storage, startup behavior, and limitations. Existing managed connections are preserved. Separate-PC enrollment and full reboot/sign-in acceptance remain deferred.

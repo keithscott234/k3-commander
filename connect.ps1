@@ -12,8 +12,8 @@ if ($env:OS -ne 'Windows_NT' -or $env:PROCESSOR_ARCHITECTURE -ne 'AMD64') {
 if (-not [IO.Path]::IsPathRooted($BootstrapHome)) { throw 'BootstrapHome must be absolute.' }
 $nodeVersion = '24.15.0'
 $nodeHash = 'cc5149eabd53779ce1e7bdc5401643622d0c7e6800ade18928a767e940bb0e62'
-$packageHash = '926b051a58fac435f38f4bc610964e8e95551db346377a06cfac1aa8841bb4ea'
-$packageUrl = 'https://github.com/keithscott234/k3-commander/releases/download/v0.1.1/t3forgeworks-k3-commander-0.1.1.tgz'
+$packageHash = 'ac9f75d191c0c3ac29c21fb8deffbe333b40a21b40ee7077e1abb90f6534718a'
+$packageUrl = 'https://github.com/keithscott234/k3-commander/releases/download/v0.1.2/t3forgeworks-k3-commander-0.1.2.tgz'
 $priorPath = $env:PATH
 $priorProgress = $ProgressPreference
 $priorTls = [Net.ServicePointManager]::SecurityProtocol
@@ -54,7 +54,7 @@ try {
     if (-not (Test-Path -LiteralPath $npm)) { throw 'Private Node runtime is incomplete; inspect the bootstrap folder.' }
     if ((Get-FileHash -LiteralPath $node -Algorithm SHA256).Hash.ToLowerInvariant() -ne '3331e1ffe19874215472217c5e94f5a0c6d8e18c4ac7111d3937aa0ad5e9b4a5') { throw 'Private Node binary integrity check failed.' }
   }
-  $package = Join-Path $BootstrapHome 'commander-0.1.1.tgz'
+  $package = Join-Path $BootstrapHome 'commander-0.1.2.tgz'
   if (-not (Test-Path -LiteralPath $package)) {
     $partial = Join-Path $BootstrapHome ('download-'+[guid]::NewGuid().ToString('N')+'.tgz')
     try { Get-VerifiedDownload $packageUrl $partial $packageHash; Move-Item -LiteralPath $partial -Destination $package }
