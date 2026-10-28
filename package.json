@@ -1,6 +1,6 @@
 {
   "name": "@t3forgeworks/k3-commander",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "type": "module",
   "description": "K3 Commander local MCP engine, with no metered tool-call quota",
